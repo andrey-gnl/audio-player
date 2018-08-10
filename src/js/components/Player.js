@@ -16,7 +16,7 @@ class Player {
   }
 
   async init() {
-    const audioList = await fetch('/data/player.json');
+    const audioList = await fetch('data/player.json');
     this._list = await audioList.json();
 
     Controls.init();
