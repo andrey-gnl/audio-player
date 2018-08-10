@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Audio Player</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <div class="player" id="player">
+        <div class="player__in">
+          <div class="player__main" id="player-main">
+            <div class="player__body">
+              <div class="player__controls">
+                <div class="controls">
+                  <div class="controls__progress">
+                    <div class="progress"> <svg xmlns="http://www.w3.org/2000/svg" width="440" height="440">
+    <g transform="translate(220 220)">
+      <circle r="220"
+        class="progress__border" />
+      <circle r="220"
+        class="progress__main"
+        id="progress"
+        transform="rotate(270.1)" />
+      <circle r="220"
+        class="progress__trigger"
+        id="progress-trigger"
+        transform="rotate(270.1)" />
+    </g>
+  </svg> </div>
+                  </div>
+                  <div class="controls__playlist"> <button class="controls__button button" id="show-playlist" title="Show playlist">
+      
+<svg class="icon icon-playlist"><use xlink:href="img/sprite.svg#icon-playlist"></use></svg>
+
+    </button> </div>
+                  <div class="controls__next"> <button class="controls__button button" id="next" title="Next">
+      
+<svg class="icon icon-next"><use xlink:href="img/sprite.svg#icon-next"></use></svg>
+
+    </button> </div>
+                  <div class="controls__pause"> <button class="controls__button button" id="play-pause" title="Play/Pause">
+      
+<svg class="icon icon-playpause"><use xlink:href="img/sprite.svg#icon-playpause"></use></svg>
+
+    </button> </div>
+                  <div class="controls__prev"> <button class="controls__button button" id="prev" title="Previous">
+      
+<svg class="icon icon-prev"><use xlink:href="img/sprite.svg#icon-prev"></use></svg>
+
+    </button> </div>
+                </div>
+              </div>
+              <div class="player__info">
+                <div class="info">
+                  <div class="info__time" id="progress-time">00:00</div>
+                  <div class="info__song">
+                    <div class="info__name" id="song-name">&nbsp;</div>
+                    <div class="info__author" id="song-author">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player__playlist">
+              <div class="playlist" id="playlist">
+                <div class="playlist__top"> <i class="playlist__progress" id="progress-line"></i> <i class="playlist__progress playlist__progress--trigger" id="progress-line-trigger"></i> <button class="playlist__close button" id="playlist-close">
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+</button> </div>
+                <div class="playlist__list">
+                  <div class="playlist__list-in" id="playlist-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
