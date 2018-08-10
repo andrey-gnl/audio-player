@@ -1,0 +1,26 @@
+<div class="controls">
+  <div class="controls__progress">
+    {% include 'partials/_progress.html' %}
+  </div>
+
+  <div class="controls__playlist">
+    <button class="controls__button button" id="show-playlist" title="Show playlist">
+      {{mixins.icon('playlist')}}
+    </button>
+  </div>
+  <div class="controls__next">
+    <button class="controls__button button" id="next" title="Next">
+      {{mixins.icon('next')}}
+    </button>
+  </div>
+  <div class="controls__pause">
+    <button class="controls__button button" id="play-pause" title="Play/Pause">
+      {{mixins.icon('playpause')}}
+    </button>
+  </div>
+  <div class="controls__prev">
+    <button class="controls__button button" id="prev" title="Previous">
+      {{mixins.icon('prev')}}
+    </button>
+  </div>
+</div>

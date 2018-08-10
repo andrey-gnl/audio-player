@@ -1,0 +1,68 @@
+.playlist
+	display: flex
+	flex-direction: column
+	height: 100%
+	&__top
+		padding-top: 1px
+		margin-top: -1px
+		position: relative
+		flex-shrink: 0
+		height: 61px
+		border-bottom: 1px solid #fff
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow-x: hidden
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 1px
+			height: 1px
+			background: #fff
+	&__close
+		.icon
+			vertical-align: middle
+			fill: #fff
+			font-size: 26px
+			line-height: 1
+	&__list
+		flex: 1 1 auto
+		display: flex
+		flex-direction: column
+		padding: 10px 0
+		border-bottom: 1px solid #fff
+		overflow: auto
+		&-in
+			margin: auto
+		a
+			display: block
+			color: #fff
+			text-align: center
+			text-decoration: none
+			font-size: 16px
+			transition: color .3s ease
+			&:not(:last-child)
+				margin-bottom: 30px
+			&.is-active
+				color: #fdff6d
+			strong
+				display: block
+				font-size: 1.125em
+				font-weight: 500
+	&__progress
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 3px
+		background: #fff
+		transform: translateX(-100%)
+		&--trigger
+			transform: translateX(0)
+			background: none
+			cursor: pointer
+			z-index: 2
+

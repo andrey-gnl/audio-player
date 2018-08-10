@@ -1,0 +1,23 @@
+.progress
+	svg
+		overflow: visible
+	circle
+		fill: none
+	&__trigger
+		stroke: transparent
+		stroke-width: 10px
+		stroke-dashoffset: 1382px
+		stroke-dasharray: 0
+		cursor: pointer
+	&__main
+		stroke: #fff
+		stroke-width: 3px
+		/* 2 * Math.PI * radius + 1  */
+		stroke-dashoffset: 1382px
+		stroke-dasharray: 1382px
+		// transition: stroke-dasharray .5s ease
+		&:hover
+			stroke: red
+	&__border
+		stroke: #fff
+		stroke-width: 1px
